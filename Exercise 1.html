@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	> [9, 8, 7, 6, 5, 4, 3, 2, 1]
+</body>
+<script>
+	let getCountdownIterator = function *() {
+	    let i = 10;
+	    while( i > 1 ) {
+	        yield --i;
+	    }
+	}
+	 
+	console.log( [ ...getCountdownIterator() ] );
+</script>
+</html>
